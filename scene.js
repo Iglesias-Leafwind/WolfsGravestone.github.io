@@ -2088,14 +2088,14 @@ function unbreak(){
 }
 var snowflakes = []
 function computeFrame(time) {
-    if(snowflakes.length <= 120){
+    if(snowflakes.length <= 130){
     	snowflakes.push({obj:createSnowFlake(), xVel:Math.random()*1000 - 500, zVel:Math.random()*1000 - 500})
     	snowflakes[snowflakes.length-1]["obj"].position.y += 240
     	sceneElements.sceneGraph.add(snowflakes[snowflakes.length-1]["obj"])
     }
     for(var indx = 0; indx < snowflakes.length; indx++){
         var curr = snowflakes[indx]["obj"]
-        curr.position.y -= 1
+        curr.position.y -= 2
         if(curr.position.y <= -155){
 		curr.position.y = 240
         }
