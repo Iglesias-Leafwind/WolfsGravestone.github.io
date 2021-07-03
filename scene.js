@@ -16,37 +16,37 @@ var remove = false;
 var diffuse = new THREE.Color(100, 0, 0)
 var specular = new THREE.Color(100, 0, 0)
 var shiny = 10000000000000.0
-var shinyRedMaterial = new THREE.MeshStandardMaterial({ color: diffuse, specular: specular, shininess: shiny });
+var shinyRedMaterial = new THREE.MeshPhongMaterial({ color: diffuse, specular: specular, shininess: shiny });
 materials.push(shinyRedMaterial)
 //red material
 diffuse = new THREE.Color(0.6, 0.0, 0.0)
 specular = new THREE.Color(0.8, 0.6, 0.6)
 shiny = 32.0
-var redPlasticMaterial = new THREE.MeshStandardMaterial({ color: diffuse, specular: specular, shininess: shiny });
+var redPlasticMaterial = new THREE.MeshPhongMaterial({ color: diffuse, specular: specular, shininess: shiny });
 materials.push(redPlasticMaterial)
 //redder material
 diffuse = new THREE.Color(1, 0.0, 0.0)
 specular = new THREE.Color(1, 0.6, 0.6)
 shiny = 0.8
-var redderPlasticMaterial = new THREE.MeshStandardMaterial({ color: diffuse, specular: specular, shininess: shiny });
+var redderPlasticMaterial = new THREE.MeshPhongMaterial({ color: diffuse, specular: specular, shininess: shiny });
 materials.push(redderPlasticMaterial)
 //red brown material
 diffuse = new THREE.Color(0.6, 0.2, 0.2)
 specular = new THREE.Color(0.63, 0.23, 0.17)
 shiny = 12.0
-var redBrownPlasticMaterial = new THREE.MeshStandardMaterial({ color: diffuse, specular: specular, shininess: shiny });
+var redBrownPlasticMaterial = new THREE.MeshPhongMaterial({ color: diffuse, specular: specular, shininess: shiny });
 materials.push(redBrownPlasticMaterial)
 //black material
 diffuse = new THREE.Color(0.13, 0.05, 0.01)
 specular = new THREE.Color(0.07, 0.01, 0.05)
 shiny = 32.0
-var blackMaterial = new THREE.MeshStandardMaterial({ color: diffuse, specular: specular, shininess: shiny });
+var blackMaterial = new THREE.MeshPhongMaterial({ color: diffuse, specular: specular, shininess: shiny });
 materials.push(blackMaterial)
 //Silver
 diffuse = new THREE.Color(0.2775, 0.2775, 0.2775)
 specular = new THREE.Color(0.773911, 0.773911, 0.773911)
 shiny = 89.6
-var ironMaterial = new THREE.MeshStandardMaterial({ color: diffuse, specular: specular, shininess: shiny });
+var ironMaterial = new THREE.MeshPhongMaterial({ color: diffuse, specular: specular, shininess: shiny });
 materials.push(ironMaterial)
 // Functions are called
 //  1. Initialize the empty scene
