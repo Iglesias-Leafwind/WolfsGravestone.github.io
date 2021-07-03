@@ -2092,8 +2092,8 @@ function computeFrame(time) {
     snowflakes[snowflakes.length-1]["obj"].position.y += 240
     //snowflakes[snowflakes.length-1]["obj"].position.x +=Math.random()*300 -150
     //snowflakes[snowflakes.length-1]["obj"].position.z +=Math.random()*300 -150
-    snowflakes.push({obj:createSnowFlake(), xVel:Math.random()*1000 - 500, zVel:Math.random()*1000 - 500})
-    snowflakes[snowflakes.length-1]["obj"].position.y += 240
+    //snowflakes.push({obj:createSnowFlake(), xVel:Math.random()*1000 - 500, zVel:Math.random()*1000 - 500})
+    //snowflakes[snowflakes.length-1]["obj"].position.y += 240
     //snowflakes[snowflakes.length-1]["obj"].position.x +=Math.random()*300 -150
     //snowflakes[snowflakes.length-1]["obj"].position.z +=Math.random()*300 -150
     //snowflakes[snowflakes.length-1].position.y += -155
