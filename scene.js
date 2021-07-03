@@ -68,9 +68,9 @@ document.addEventListener('keydown', onDocumentKeyDown, false);
 document.addEventListener('keyup', onDocumentKeyUp, false);
 
 //Textures:
-var texture = new THREE.TextureLoader().load("/textures/c4ee301d343a40df89ca666754d799deBig.jpeg");
-var bump = new THREE.TextureLoader().load("/textures/fa25f9ebb1bb4fc497099b67dfd8b03cBig.jpeg");
-var normal = new THREE.TextureLoader().load("/textures/a6e2f0b5be4e4368bff28ad4ccd117cfBig.jpeg");
+var texture = new THREE.TextureLoader().load("./textures/c4ee301d343a40df89ca666754d799deBig.jpeg");
+var bump = new THREE.TextureLoader().load("./textures/fa25f9ebb1bb4fc497099b67dfd8b03cBig.jpeg");
+var normal = new THREE.TextureLoader().load("./textures/a6e2f0b5be4e4368bff28ad4ccd117cfBig.jpeg");
 var mat = new THREE.MeshStandardMaterial();
 redPlasticMaterial.map = texture;
 redPlasticMaterial.bumpMap = bump;
