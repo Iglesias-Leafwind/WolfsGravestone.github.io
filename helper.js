@@ -25,7 +25,7 @@ const helper = {
         // ************************** //
         // Add ambient light
         // ************************** //
-        const ambientLight = new THREE.AmbientLight('rgb(0,0,50)', 1);
+        const ambientLight = new THREE.AmbientLight('rgb(255,255,255)', 0.01);
         sceneElements.sceneGraph.add(ambientLight);
 
         // ***************************** //
@@ -33,19 +33,19 @@ const helper = {
         // ***************************** //
 
         const light1 = new THREE.DirectionalLight('rgb(19,61,27)');
-        light1.position.set(10, 55, 100);
+        light1.position.set(55, 55, 100);
         sceneElements.sceneGraph.add(light1);
 
         const light2 = new THREE.DirectionalLight('rgb(40,124,55)');
-        light2.position.set(10, 55, -100);
+        light2.position.set(55, 55, -100);
         sceneElements.sceneGraph.add(light2);
 
         const light3 = new THREE.DirectionalLight('rgb(58,186,82)');
-        light3.position.set(18, 15, 75);
+        light3.position.set(100, 55, 55);
         sceneElements.sceneGraph.add(light3);
 
         const light4 = new THREE.DirectionalLight('rgb(58,186,82)');
-        light4.position.set(18, 15, -75);
+        light4.position.set(-100, 55, 55);
         sceneElements.sceneGraph.add(light4);
 
         // Setup shadow properties
