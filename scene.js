@@ -2088,16 +2088,11 @@ function unbreak(){
 }
 var snowflakes = []
 function computeFrame(time) {
-    snowflakes.push({obj:createSnowFlake(), xVel:Math.random()*1000 - 500, zVel:Math.random()*1000 - 500})
-    snowflakes[snowflakes.length-1]["obj"].position.y += 240
-    //snowflakes[snowflakes.length-1]["obj"].position.x +=Math.random()*300 -150
-    //snowflakes[snowflakes.length-1]["obj"].position.z +=Math.random()*300 -150
-    //snowflakes.push({obj:createSnowFlake(), xVel:Math.random()*1000 - 500, zVel:Math.random()*1000 - 500})
-    //snowflakes[snowflakes.length-1]["obj"].position.y += 240
-    //snowflakes[snowflakes.length-1]["obj"].position.x +=Math.random()*300 -150
-    //snowflakes[snowflakes.length-1]["obj"].position.z +=Math.random()*300 -150
-    //snowflakes[snowflakes.length-1].position.y += -155
-    sceneElements.sceneGraph.add(snowflakes[snowflakes.length-1]["obj"])
+    if(snowflakes.length <= 120){
+    	snowflakes.push({obj:createSnowFlake(), xVel:Math.random()*1000 - 500, zVel:Math.random()*1000 - 500})
+    	snowflakes[snowflakes.length-1]["obj"].position.y += 240
+    	sceneElements.sceneGraph.add(snowflakes[snowflakes.length-1]["obj"])
+    }
     for(var indx = 0; indx < snowflakes.length; indx++){
         var curr = snowflakes[indx]["obj"]
         curr.position.y -= 1
