@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!--
+
+		Wolfs-Gravestone.html
+
+		Is a recreation of the Wolfs Gravestone Claymore from Genshin Impact
+
+-->
+
+<head>
+
+	<title>Wolfs-Gravestone &mdash; A claymore</title>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">
+
+
+	<link rel="stylesheet" href="style.css">
+	<script type="module" src="./build/three.js" defer></script>
+	<script type="module" src="./lib/js/controls/OrbitControls.js" defer></script>
+	
+	<script type="module" src="./lib/js/objects/Reflector.js" defer></script>	
+
+	<script type="text/javascript" src="helper.js" defer></script>
+	<script type="text/javascript" src="scene.js" defer></script>
+
+</head>
+<style>
+	body {
+	overflow: hidden;
+	margin: 0;
+	}
+
+	.ui {
+	position: absolute;
+	}
+
+	button{
+	margin: 20px;
+	}
+</style>
+<body>
+	<div id="Wolfs-Gravestone"> </div>
+	<div style="display:block">
+		<button style="top:0px;left: 0px" class="ui" onclick="rotationSwitch()">Rotate</button>
+		<button style="top:0px;left: 60px" class="ui" onclick="swingSword()">Swing</button>
+		<button style="top:0px;left: 120px" class="ui" onclick="breakSword()">Break</button>
+
+		<select style="top:50px;left:10px" class="ui" id="object">
+			<option value="orb">Orb</option>
+			<option value="blade">Blade</option>
+			<option value="RedBladeSidesGuardClaws">Red Blade Sides and Guard Claws</option>
+			<option value="guardCover">Guard Cover</option>
+			<option value="guardInsides">Guard Insides</option>
+			<option value="bladeSides">Blade Sides</option>
+		</select>
+		<p style="top:60px;left:15px" class="ui">Shininess</p>
+		<input style="top:76px;left:85px;width:10%" class="ui" id="shiny" type="number" value="0" step="0.5">
+		<p style="top:85px;left:15px" class="ui">Diffuse:</p>
+		<p style="top:110px;left:15px" class="ui">R</p>
+		<input style="top:124px;left:30px;width:3.3%" class="ui" id="diffR" type="number" value="0" step="0.01">
+		<p style="top:110px;left:85px" class="ui">G</p>
+		<input style="top:124px;left:100px;width:3.3%" class="ui" id="diffG" type="number" value="0" step="0.01">
+		<p style="top:110px;left:155px" class="ui">B</p>
+		<input style="top:124px;left:170px;width:3.3%" class="ui" id="diffB" type="number" value="0" step="0.01">
+		<p style="top:135px;left:15px" class="ui">Specular:</p>
+		<p style="top:160px;left:15px" class="ui">R</p>
+		<input style="top:174px;left:30px;width:3.3%" class="ui" id="specR" type="number" value="0" step="0.01">
+		<p style="top:160px;left:85px" class="ui">G</p>
+		<input style="top:174px;left:100px;width:3.3%" class="ui" id="specG" type="number" value="0" step="0.01">
+		<p style="top:160px;left:155px" class="ui">B</p>
+		<input style="top:174px;left:170px;width:3.3%" class="ui" id="specB" type="number" value="0" step="0.01">
+
+		<button style="top:190px;left:0px" class="ui" onclick="changeColor()">Change color and material</button>
+		<button style="top:220px;left:65px" class="ui" onclick="unbreak()">Unbreak Sword</button>
+		<button style="top:220px;left:0px" class="ui" onclick="reset()">Reset</button>
+	</div>
+</body>
+
+</html>
